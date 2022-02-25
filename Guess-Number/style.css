@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* #region Reset Css */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* #endregion Reset Css */
+
+body {
+  font-family: "Press Start 2P";
+  background: #222;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top h5 {
+  color: yellow;
+}
+
+.top h5 span {
+  color: #000;
+}
+
+.btn {
+  padding: 5px;
+  color: grey;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.numberIsThis {
+  margin: 20px 0;
+}
+.numberIsThis h1 {
+  color: rgb(219, 219, 219);
+}
+
+.numberIsThis h1 p {
+  font-size: 12px;
+  color: aqua;
+  background: none;
+}
+
+.numberIsThis p {
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+}
+
+.numberIsThis p span {
+  color: green;
+}
+
+.numberIsThis .randomNumber h1.hiddenNumber {
+  font-size: 50px;
+  background: white;
+  color: #000;
+  box-shadow: none;
+  padding: 10px;
+  width: 200px;
+  margin: 20px auto;
+}
+
+.numberIsThis .attemps {
+    padding: 0 10px;
+}
+
+.gameSection{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpTools {
+  padding: 15px;
+  background: rgb(92, 92, 92);
+}
+
+.helpTools h1{
+    margin-bottom: 10px;
+    display:block;
+    font-size:16px;
+}
+
+.helpTools p {
+    font-size: 9px;
+}
+
+.tryNumber {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-top:10px;
+}
+.tryNumber input{
+    padding:5px;
+    width:100px;
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+  .gameSection{
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  .colSpanTwo {
+    grid-column: span 2;
+  }
+  .tryNumber{
+    margin:0;
+  }
+}
