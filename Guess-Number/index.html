@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess my number</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <div class="top colSpanTwo">
+        <button class="btn again">Again?</button>
+        <h5>HighScore: <span class="score">0</span></h5>
+      </div>
+      <div class="numberIsThis colSpanTwo" >
+        <h1>What number in this? <p>Between 1 and 50</p></h1>
+        <div class="randomNumber">
+            <h1 class="hiddenNumber">?</h1>
+        </div>
+        <p>You have<span class="attemps">20</span>attempts</p>
+      </div>
+      <div class="gameSection colSpanTwo">
+        <div class="helpTools">
+            <h1>Help</h1>
+            <p class="helpnote"></p>
+        </div>
+        <div class="tryNumber">
+            <input type="number" class="number" />
+            <button class="btn try">Try</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
