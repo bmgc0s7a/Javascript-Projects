@@ -1,0 +1,20 @@
+/* Variables */
+
+.web-struct {
+  grid-template-areas:
+    "header"
+    "balance_options";
+  grid-template-rows: auto;
+}
+
+.grid-area-header {
+  grid-area: header;
+}
+
+.grid-area-balance_options {
+  grid-area: balance_options;
+}
+
+.grid-area-footer {
+  grid-area: footer;
+}
